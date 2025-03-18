@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React, { useEffect } from 'react';
+import Hero from '@/components/home/Hero';
+import Services from '@/components/home/Services';
+import About from '@/components/home/About';
+import Gallery from '@/components/home/Gallery';
+import Testimonials from '@/components/home/Testimonials';
+import Contact from '@/components/home/Contact';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+
+const Index: React.FC = () => {
+  useEffect(() => {
+    // Scroll to top when page loads
+    window.scrollTo(0, 0);
+    
+    // Set page title
+    document.title = 'Elegance Salon - Premium Beauty Services';
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <Services />
+        <About />
+        <Gallery />
+        <Testimonials />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
