@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -56,7 +55,7 @@ const ContactPage: React.FC = () => {
   }, []);
   
   useEffect(() => {
-    const handleIntersection = (entries: IntersectionObseratorEntry[]) => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const sections = entry.target.querySelectorAll('.animate-section');

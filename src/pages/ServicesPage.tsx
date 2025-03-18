@@ -1,9 +1,8 @@
-
 import React, { useEffect, useRef } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ServiceCard from '@/components/ui/ServiceCard';
-import { Scissors, ScissorsLineDashed } from 'lucide-react';
+import { Scissors, ScissorsLineDashed, Phone } from 'lucide-react';
 
 const ServicesPage: React.FC = () => {
   const pageRef = useRef<HTMLDivElement>(null);
