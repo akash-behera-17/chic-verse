@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Elegance Salon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-scissors"></i>
+                <span>Elegance</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-desktop">
+                <a href="tel:+11234567890" class="btn btn-outline">Call Us</a>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-buttons">
+                    <a href="tel:+11234567890" class="btn btn-outline btn-full">Call Us</a>
+                    <a href="contact.html" class="btn btn-primary btn-full">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-header bg-light">
+            <div class="container">
+                <div class="badge">
+                    <i class="fas fa-scissors"></i>
+                    <p>Our Story</p>
+                </div>
+                <h1>About Elegance Salon</h1>
+                <p>Get to know our salon, our story, and our passionate team of talented professionals.</p>
+            </div>
+        </section>
+        
+        <!-- Our Story -->
+        <section class="section">
+            <div class="container">
+                <div class="about-story">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Elegance Salon Interior">
+                    </div>
+                    <div class="about-content">
+                        <h2>Our Story</h2>
+                        <p class="lead">Founded in 2003 by renowned stylist Maria Johnson, Elegance Salon began as a small but passionate venture with a commitment to exceptional hair care.</p>
+                        <p>What started as a team of three has grown into a diverse group of talented professionals with a shared passion for beauty and a vision to transform the salon experience through artistry, expertise, and personalized care.</p>
+                        <p>Over the years, Elegance has evolved into a haven where clients can relax, rejuvenate, and leave feeling more confident and beautiful than when they arrived. Our success stems from our unwavering dedication to ongoing education, mastering new techniques, and using only the finest products in the industry.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">20+</span>
+                                <span class="stat-text">Years of Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15</span>
+                                <span class="stat-text">Expert Stylists</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-text">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="mission-content text-center">
+                    <h2>Our Mission & Values</h2>
+                    <p class="lead">At Elegance Salon, we believe that beauty is not just about how you look, but how you feel.</p>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Client-Focused</h3>
+                            <p>Your satisfaction is our priority. We listen carefully to understand your needs and provide personalized service.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Excellence</h3>
+                            <p>We strive for perfection in everything we do, from haircuts to color treatments and styling.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h3>Continuous Learning</h3>
+                            <p>Our team regularly attends training sessions to stay updated with the latest techniques and trends.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3>Sustainability</h3>
+                            <p>We're committed to using eco-friendly products and implementing sustainable practices in our salon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Team -->
+        <section class="section" id="team">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>Meet Our Team</h2>
+                    <p>Our talented and passionate stylists are dedicated to helping you look and feel your best.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1961&q=80" alt="Maria Johnson">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Maria Johnson</h3>
+                            <p class="team-role">Founder & Master Stylist</p>
+                            <p>With over 25 years of experience, Maria is known for her precision cuts and color expertise.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="David Chen">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>David Chen</h3>
+                            <p class="team-role">Color Specialist</p>
+                            <p>David's creativity and attention to detail make him one of our most requested colorists.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Thompson">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Sarah Thompson</h3>
+                            <p class="team-role">Senior Stylist</p>
+                            <p>Sarah specializes in trendy cuts and styles that enhance her clients' natural beauty.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Michael Rodriguez">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Michael Rodriguez</h3>
+                            <p class="team-role">Treatment Expert</p>
+                            <p>Michael is our go-to expert for hair treatments and scalp health solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section bg-light">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h2>What Our Clients Say</h2>
+                    <p>Here's what some of our valued clients have to say about their experience at Elegance Salon.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I've been coming to Elegance for years, and they never disappoint. My stylist always knows exactly what I want and executes it perfectly."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Johnson">
+                            <p>Sarah Johnson</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As someone who's always been nervous about trying new styles, the team at Elegance made me feel comfortable and gave me the best haircut I've ever had."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Michael Chen">
+                            <p>Michael Chen</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The atmosphere is so relaxing, and the staff is incredibly professional. My color treatment came out exactly as I wanted. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1961&q=80" alt="Emily Davis">
+                            <p>Emily Davis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section section">
+            <div class="container">
+                <div class="cta-content text-center">
+                    <h2>Ready to Experience the Elegance Difference?</h2>
+                    <p>Book your appointment today and let our expert team take care of all your beauty needs.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                        <a href="services.html" class="btn btn-outline">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-scissors"></i>
+                        <span>Elegance</span>
+                    </div>
+                    <p>Where beauty meets expertise. We're dedicated to bringing out your natural beauty and helping you feel your best.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#haircuts">Haircuts & Styling</a></li>
+                        <li><a href="services.html#coloring">Hair Coloring</a></li>
+                        <li><a href="services.html#treatments">Hair Treatments</a></li>
+                        <li><a href="services.html#makeup">Makeup Services</a></li>
+                        <li><a href="services.html#nail">Nail Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+11234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>Mon-Fri: 9am - 8pm</p>
+                                <p>Sat: 9am - 6pm</p>
+                                <p>Sun: 10am - 4pm</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Elegance Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

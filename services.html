@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Elegance Salon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-scissors"></i>
+                <span>Elegance</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-desktop">
+                <a href="tel:+11234567890" class="btn btn-outline">Call Us</a>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-buttons">
+                    <a href="tel:+11234567890" class="btn btn-outline btn-full">Call Us</a>
+                    <a href="contact.html" class="btn btn-primary btn-full">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-header bg-light">
+            <div class="container">
+                <div class="badge">
+                    <i class="fas fa-scissors"></i>
+                    <p>Our Premium Services</p>
+                </div>
+                <h1>Services & Pricing</h1>
+                <p>We offer a full range of hair and beauty services to help you look and feel your best. Each service begins with a thorough consultation to ensure we meet your unique needs.</p>
+            </div>
+        </section>
+        
+        <!-- Haircuts & Styling -->
+        <section class="services-section section" id="haircuts">
+            <div class="container">
+                <div class="service-category-header">
+                    <i class="fas fa-cut"></i>
+                    <h2>Haircuts & Styling</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1500840216050-6ffa99d75160?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1997&q=80" alt="Women's Haircut">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Women's Haircut</h3>
+                                <span class="price">$65+</span>
+                            </div>
+                            <p>Expert cut and style tailored to your face shape and hair texture.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1593702288056-f5fe88965592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Men's Haircut">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Men's Haircut</h3>
+                                <span class="price">$45+</span>
+                            </div>
+                            <p>Precision cut with attention to detail and personal style.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80" alt="Blow Dry & Styling">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Blow Dry & Styling</h3>
+                                <span class="price">$50+</span>
+                            </div>
+                            <p>Professional blow dry and styling for any occasion.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" alt="Special Event Styling">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Special Event Styling</h3>
+                                <span class="price">$85+</span>
+                            </div>
+                            <p>Elegant updos and special occasion styling.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hair Coloring -->
+        <section class="services-section section" id="coloring">
+            <div class="container">
+                <div class="service-category-header">
+                    <i class="fas fa-palette"></i>
+                    <h2>Hair Coloring</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1608612528493-3471f39b2318?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Full Color">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Full Color</h3>
+                                <span class="price">$95+</span>
+                            </div>
+                            <p>Complete hair color transformation with premium products.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Highlights/Lowlights">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Highlights/Lowlights</h3>
+                                <span class="price">$125+</span>
+                            </div>
+                            <p>Dimensional color effects to enhance your natural hair color.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1629008337640-9c6207fd4427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Balayage">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Balayage</h3>
+                                <span class="price">$165+</span>
+                            </div>
+                            <p>Hand-painted highlights for a natural, sun-kissed look.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1601557527050-a3a5387ff053?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Root Touch-Up">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Root Touch-Up</h3>
+                                <span class="price">$75+</span>
+                            </div>
+                            <p>Quick refresh for maintaining your color between full services.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hair Treatments -->
+        <section class="services-section section" id="treatments">
+            <div class="container">
+                <div class="service-category-header">
+                    <i class="fas fa-pump-soap"></i>
+                    <h2>Hair Treatments</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1607779097040-17bae5596064?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Deep Conditioning">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Deep Conditioning</h3>
+                                <span class="price">$35+</span>
+                            </div>
+                            <p>Intensive moisture treatment for dry or damaged hair.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560093230-231f3a98fa34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Keratin Treatment">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Keratin Treatment</h3>
+                                <span class="price">$250+</span>
+                            </div>
+                            <p>Smoothing treatment that reduces frizz and adds shine.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1522748906645-95d8adfd52c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Scalp Treatment">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Scalp Treatment</h3>
+                                <span class="price">$65+</span>
+                            </div>
+                            <p>Therapeutic treatment for scalp health and hair growth.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1600334369011-321aeca42ec6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80" alt="Hair Mask">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-header">
+                                <h3>Hair Mask</h3>
+                                <span class="price">$45+</span>
+                            </div>
+                            <p>Restorative mask that repairs and strengthens damaged hair.</p>
+                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Info -->
+        <section class="booking-info section bg-light">
+            <div class="container">
+                <h2>Ready to Book Your Appointment?</h2>
+                <p>Contact us to schedule your service or consultation. We look forward to helping you achieve your hair goals.</p>
+                <div class="booking-buttons">
+                    <a href="tel:+11234567890" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">Book Online</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-scissors"></i>
+                        <span>Elegance</span>
+                    </div>
+                    <p>Where beauty meets expertise. We're dedicated to bringing out your natural beauty and helping you feel your best.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#haircuts">Haircuts & Styling</a></li>
+                        <li><a href="services.html#coloring">Hair Coloring</a></li>
+                        <li><a href="services.html#treatments">Hair Treatments</a></li>
+                        <li><a href="services.html#makeup">Makeup Services</a></li>
+                        <li><a href="services.html#nail">Nail Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+11234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>Mon-Fri: 9am - 8pm</p>
+                                <p>Sat: 9am - 6pm</p>
+                                <p>Sun: 10am - 4pm</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Elegance Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

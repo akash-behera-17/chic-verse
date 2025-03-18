@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Elegance Salon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-scissors"></i>
+                <span>Elegance</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-desktop">
+                <a href="tel:+11234567890" class="btn btn-outline">Call Us</a>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-buttons">
+                    <a href="tel:+11234567890" class="btn btn-outline btn-full">Call Us</a>
+                    <a href="contact.html" class="btn btn-primary btn-full">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-header bg-light">
+            <div class="container">
+                <div class="badge">
+                    <i class="fas fa-images"></i>
+                    <p>Our Work</p>
+                </div>
+                <h1>Our Gallery</h1>
+                <p>A showcase of our best work and beautiful transformations. See what we can do for you.</p>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="section">
+            <div class="container">
+                <div class="filters-container">
+                    <div class="gallery-filter" id="galleryFilter">
+                        <button class="btn btn-outline active" data-filter="all">All</button>
+                        <button class="btn btn-outline" data-filter="haircuts">Haircuts & Styling</button>
+                        <button class="btn btn-outline" data-filter="color">Color</button>
+                        <button class="btn btn-outline" data-filter="treatments">Treatments</button>
+                        <button class="btn btn-outline" data-filter="makeup">Makeup</button>
+                        <button class="btn btn-outline" data-filter="nails">Nails</button>
+                        <button class="btn btn-outline" data-filter="salon">Salon</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-container">
+                    <div id="gallery-loading" class="text-center py-20">
+                        <div class="loading-spinner"></div>
+                    </div>
+                    
+                    <div class="gallery-grid" id="galleryGrid">
+                        <div class="gallery-item" data-category="salon">
+                            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Salon interior">
+                        </div>
+                        <div class="gallery-item" data-category="haircuts">
+                            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Hair styling session">
+                        </div>
+                        <div class="gallery-item tall" data-category="haircuts">
+                            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" alt="Special occasion hairstyle">
+                        </div>
+                        <div class="gallery-item" data-category="treatments">
+                            <img src="https://images.unsplash.com/photo-1595171349553-002c46191c9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="Woman getting hair washed">
+                        </div>
+                        <div class="gallery-item" data-category="color">
+                            <img src="https://images.unsplash.com/photo-1634302086887-13b5281d354e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Woman with blond hair">
+                        </div>
+                        <div class="gallery-item tall" data-category="color">
+                            <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Detailed hair color work">
+                        </div>
+                        <div class="gallery-item" data-category="nails">
+                            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Nail art close up">
+                        </div>
+                        <div class="gallery-item" data-category="haircuts">
+                            <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Woman with styled updo">
+                        </div>
+                        <div class="gallery-item" data-category="color">
+                            <img src="https://images.unsplash.com/photo-1629008337640-9c6207fd4427?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Balayage hair color">
+                        </div>
+                        <div class="gallery-item tall" data-category="haircuts">
+                            <img src="https://images.unsplash.com/photo-1614159406151-311338fd42f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80" alt="Woman with curly hair">
+                        </div>
+                        <div class="gallery-item" data-category="makeup">
+                            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Woman with makeup">
+                        </div>
+                        <div class="gallery-item" data-category="color">
+                            <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hair coloring process">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section section">
+            <div class="container">
+                <div class="cta-content text-center">
+                    <h2>Love What You See?</h2>
+                    <p>Book an appointment today and let our expert stylists transform your look.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+                        <a href="services.html" class="btn btn-outline">Explore Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-scissors"></i>
+                        <span>Elegance</span>
+                    </div>
+                    <p>Where beauty meets expertise. We're dedicated to bringing out your natural beauty and helping you feel your best.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#haircuts">Haircuts & Styling</a></li>
+                        <li><a href="services.html#coloring">Hair Coloring</a></li>
+                        <li><a href="services.html#treatments">Hair Treatments</a></li>
+                        <li><a href="services.html#makeup">Makeup Services</a></li>
+                        <li><a href="services.html#nail">Nail Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+11234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>Mon-Fri: 9am - 8pm</p>
+                                <p>Sat: 9am - 6pm</p>
+                                <p>Sun: 10am - 4pm</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Elegance Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Additional JavaScript for gallery filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.gallery-filter button');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const loadingElement = document.getElementById('gallery-loading');
+            const galleryGrid = document.getElementById('galleryGrid');
+            
+            // Hide gallery and show loading initially
+            galleryGrid.style.display = 'none';
+            
+            // Simulate loading
+            setTimeout(function() {
+                if (loadingElement) loadingElement.style.display = 'none';
+                if (galleryGrid) {
+                    galleryGrid.style.display = 'grid';
+                    
+                    // Add animation to gallery items
+                    galleryItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.classList.add('animate-fade-in');
+                        }, 100 * index);
+                    });
+                }
+            }, 800);
+            
+            // Filter functionality
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Hide gallery grid and show loading
+                    galleryGrid.style.display = 'none';
+                    loadingElement.style.display = 'block';
+                    
+                    // Simulate loading
+                    setTimeout(function() {
+                        loadingElement.style.display = 'none';
+                        galleryGrid.style.display = 'grid';
+                        
+                        // Filter items
+                        galleryItems.forEach((item, index) => {
+                            const itemCategory = item.getAttribute('data-category');
+                            
+                            // Reset animation classes
+                            item.classList.remove('animate-fade-in');
+                            
+                            if (filterValue === 'all' || filterValue === itemCategory) {
+                                item.style.display = 'block';
+                                // Add animation with delay
+                                setTimeout(() => {
+                                    item.classList.add('animate-fade-in');
+                                }, 100 * index);
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
