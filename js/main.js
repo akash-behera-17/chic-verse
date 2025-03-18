@@ -20,6 +20,21 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Setup contact form submission
   setupContactForm();
+  
+  // Setup back to top button
+  setupBackToTop();
+  
+  // Setup FAQ toggles
+  setupFaqToggles();
+  
+  // Setup testimonial slider
+  setupTestimonialSlider();
+  
+  // Setup tabs navigation (for services page)
+  setupTabsNavigation();
+  
+  // Setup gallery filters (for gallery page)
+  setupGalleryFilters();
 });
 
 // Set the current year in the footer copyright
@@ -177,6 +192,240 @@ function setupContactForm() {
   }
 }
 
+// Setup back to top button
+function setupBackToTop() {
+  const backToTopButton = document.getElementById('backToTop');
+  
+  if (backToTopButton) {
+    // Show button when user scrolls down 300px
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('active');
+      } else {
+        backToTopButton.classList.remove('active');
+      }
+    });
+    
+    // Scroll to top when button is clicked
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+}
+
+// Setup FAQ toggles
+function setupFaqToggles() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', function() {
+      // Close all other FAQs
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item && otherItem.classList.contains('active')) {
+          otherItem.classList.remove('active');
+        }
+      });
+      
+      // Toggle current FAQ
+      item.classList.toggle('active');
+    });
+  });
+}
+
+// Setup testimonial slider
+function setupTestimonialSlider() {
+  const slider = document.getElementById('testimonialsSlider');
+  
+  if (slider) {
+    const testimonials = slider.querySelectorAll('.testimonial-card');
+    const dotsContainer = document.getElementById('testimonialDots');
+    const prevButton = document.getElementById('prevTestimonial');
+    const nextButton = document.getElementById('nextTestimonial');
+    
+    let currentIndex = 0;
+    
+    // Create dots
+    if (dotsContainer) {
+      testimonials.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('slider-dot');
+        if (index === 0) dot.classList.add('active');
+        
+        dot.addEventListener('click', function() {
+          goToSlide(index);
+        });
+        
+        dotsContainer.appendChild(dot);
+      });
+    }
+    
+    // Set up button click events
+    if (prevButton) {
+      prevButton.addEventListener('click', function() {
+        goToSlide(currentIndex - 1);
+      });
+    }
+    
+    if (nextButton) {
+      nextButton.addEventListener('click', function() {
+        goToSlide(currentIndex + 1);
+      });
+    }
+    
+    // Function to go to a specific slide
+    function goToSlide(index) {
+      // Handle looping
+      if (index < 0) {
+        index = testimonials.length - 1;
+      } else if (index >= testimonials.length) {
+        index = 0;
+      }
+      
+      currentIndex = index;
+      
+      // Move the slider
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      
+      // Update dots
+      if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll('.slider-dot');
+        dots.forEach((dot, i) => {
+          if (i === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+    }
+    
+    // Add touch support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    slider.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    slider.addEventListener('touchend', function(e) {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+    
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      
+      if (touchEndX < touchStartX - swipeThreshold) {
+        // Swipe left (next)
+        goToSlide(currentIndex + 1);
+      } else if (touchEndX > touchStartX + swipeThreshold) {
+        // Swipe right (prev)
+        goToSlide(currentIndex - 1);
+      }
+    }
+    
+    // Auto advance slides every 5 seconds
+    setInterval(function() {
+      goToSlide(currentIndex + 1);
+    }, 5000);
+  }
+}
+
+// Setup tabs navigation
+function setupTabsNavigation() {
+  const tabsContainer = document.getElementById('servicesTabs');
+  
+  if (tabsContainer) {
+    const tabButtons = tabsContainer.querySelectorAll('.tab-button');
+    const tabPanes = tabsContainer.querySelectorAll('.tab-pane');
+    
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons and panes
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabPanes.forEach(pane => pane.classList.remove('active'));
+        
+        // Add active class to current button
+        button.classList.add('active');
+        
+        // Show corresponding tab pane
+        const tabId = button.getAttribute('data-tab');
+        const tabPane = document.getElementById(tabId);
+        if (tabPane) {
+          tabPane.classList.add('active');
+        }
+      });
+    });
+    
+    // Handle hash links (e.g., services.html#haircuts)
+    if (window.location.hash) {
+      const tabId = window.location.hash.substring(1);
+      const targetButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+      
+      if (targetButton) {
+        // Simulate click on the target tab
+        targetButton.click();
+        
+        // Scroll to the section
+        setTimeout(function() {
+          const tabsOffset = tabsContainer.offsetTop - 100;
+          window.scrollTo({
+            top: tabsOffset,
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    }
+  }
+}
+
+// Setup gallery filters
+function setupGalleryFilters() {
+  const galleryFilter = document.getElementById('galleryFilter');
+  const galleryGrid = document.getElementById('galleryGrid');
+  
+  if (galleryFilter && galleryGrid) {
+    const filterButtons = galleryFilter.querySelectorAll('button');
+    const galleryItems = galleryGrid.querySelectorAll('.gallery-item');
+    
+    // Show loading spinner
+    const loadingIndicator = document.getElementById('gallery-loading');
+    if (loadingIndicator) {
+      // Hide loading spinner after images are loaded
+      window.addEventListener('load', function() {
+        loadingIndicator.style.display = 'none';
+        galleryGrid.style.display = 'grid';
+      });
+    }
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filterValue = button.getAttribute('data-filter');
+        
+        // Filter gallery items
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+}
+
 // Email validation helper function
 function validateEmail(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -230,7 +479,8 @@ function showToast(title, message, type = 'success') {
 // Handle anchor links smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
-    e.preventDefault();
+    // Skip if the link is inside a tab navigation
+    if (this.closest('.tabs-navigation')) return;
     
     const targetId = this.getAttribute('href').substring(1);
     
@@ -238,6 +488,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       const targetElement = document.getElementById(targetId);
       
       if (targetElement) {
+        e.preventDefault();
+        
         // Calculate header height for offset
         const headerHeight = document.getElementById('header').offsetHeight;
         

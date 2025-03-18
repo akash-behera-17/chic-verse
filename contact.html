@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -63,10 +63,10 @@
             <div class="container">
                 <div class="badge">
                     <i class="fas fa-envelope"></i>
-                    <p>Get in Touch</p>
+                    <p>Get In Touch</p>
                 </div>
                 <h1>Contact Us</h1>
-                <p>Have questions or want to book an appointment? Reach out to us using one of the methods below.</p>
+                <p>Have questions or ready to book? Reach out to us and we'll be happy to assist you.</p>
             </div>
         </section>
         
@@ -74,74 +74,110 @@
         <section class="section">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-form">
-                        <h3>Send Us a Message</h3>
-                        <form id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="service">Service Interested In</label>
-                                    <select id="service" name="service">
-                                        <option value="">Select a service</option>
-                                        <option value="haircut">Haircut & Styling</option>
-                                        <option value="coloring">Hair Coloring</option>
-                                        <option value="treatment">Hair Treatment</option>
-                                        <option value="makeup">Makeup Service</option>
-                                        <option value="nails">Nail Service</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                        </form>
-                    </div>
-
                     <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</p>
+                        <h2>How to Reach Us</h2>
+                        <p>We're here to answer any questions you might have about our services, booking appointments, or anything else you'd like to know.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h3>Visit Us</h3>
+                                    <p>123 Beauty St, Suite 100<br>Los Angeles, CA 90001</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h3>Call Us</h3>
+                                    <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h3>Email Us</h3>
+                                    <p><a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="method-details">
+                                    <h3>Hours</h3>
+                                    <p>Monday - Saturday: 9am - 7pm<br>Sunday: 10am - 5pm</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><a href="tel:+11234567890">(123) 456-7890</a></p>
+                        
+                        <div class="social-contact">
+                            <h3>Connect With Us</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a></p>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name*</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Business Hours</h4>
-                                <p>Mon-Fri: 9am - 8pm<br>Sat: 9am - 6pm<br>Sun: 10am - 4pm</p>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address*</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
-                        </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject*</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Appointment Request">Appointment Request</option>
+                                    <option value="Service Question">Service Question</option>
+                                    <option value="Product Question">Product Question</option>
+                                    <option value="Feedback">Feedback</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="message">Your Message*</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <label for="newsletter">Subscribe to our newsletter for exclusive offers and updates</label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -150,95 +186,138 @@
         <!-- Map Section -->
         <section class="section bg-light">
             <div class="container">
-                <div class="section-heading">
-                    <h2>Find Us</h2>
-                    <p>We're conveniently located in the heart of the city.</p>
+                <div class="section-heading text-center">
+                    <div class="badge center">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Our Location</p>
+                    </div>
+                    <h2>Find Us Here</h2>
+                    <p>Conveniently located in the heart of the city with easy access and parking.</p>
                 </div>
                 
                 <div class="map-container">
-                    <!-- Replace with your actual Google Maps embed code -->
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215766768953!2d-73.98777872373156!3d40.75798657138296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1708500847229!5m2!1sen!2sus" 
-                        width="100%" 
-                        height="450" 
-                        style="border:0; border-radius: 8px; box-shadow: var(--box-shadow);" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130653034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1619071522202!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <div class="directions-container">
+                    <div class="direction-card">
+                        <div class="direction-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>By Car</h3>
+                        <p>Convenient street parking available. There's also a parking garage one block south of our location.</p>
+                    </div>
+                    
+                    <div class="direction-card">
+                        <div class="direction-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3>Public Transit</h3>
+                        <p>Bus lines 45 and 67 stop directly in front of our salon. The nearest subway station is three blocks east.</p>
+                    </div>
+                    
+                    <div class="direction-card">
+                        <div class="direction-icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <h3>Walking</h3>
+                        <p>We're located in a pedestrian-friendly area with wide sidewalks and crosswalks at all intersections.</p>
+                    </div>
                 </div>
             </div>
         </section>
-
+        
         <!-- FAQ Section -->
         <section class="section">
             <div class="container">
-                <div class="section-heading">
-                    <h2>Frequently Asked Questions</h2>
-                    <p>Find answers to common questions about our services.</p>
+                <div class="section-heading text-center">
+                    <div class="badge center">
+                        <i class="fas fa-question-circle"></i>
+                        <p>FAQs</p>
+                    </div>
+                    <h2>Common Questions</h2>
+                    <p>Find answers to frequently asked questions about appointments and our services.</p>
                 </div>
                 
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h4>Do I need to book an appointment?</h4>
-                            <i class="fas fa-chevron-down"></i>
+                            <h4>How do I schedule an appointment?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                         </div>
                         <div class="faq-answer">
-                            <p>While we do accept walk-ins if we have availability, we strongly recommend booking an appointment in advance to ensure you get your preferred stylist at your preferred time.</p>
+                            <p>You can schedule an appointment by calling us at (123) 456-7890, using our online booking form on this page, or sending us an email at info@elegancesalon.com with your preferred date, time, and service.</p>
                         </div>
                     </div>
+                    
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h4>What should I bring to my appointment?</h4>
-                            <i class="fas fa-chevron-down"></i>
+                            <h4>How far in advance should I book my appointment?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                         </div>
                         <div class="faq-answer">
-                            <p>We recommend bringing references (photos) of styles you like to help communicate your vision. If you're getting color, bringing photos of what you want is especially helpful.</p>
+                            <p>For regular services, we recommend booking 1-2 weeks in advance. For special occasions like weddings or events, we suggest booking 4-6 weeks ahead to ensure availability. Last-minute appointments may be available – feel free to call us to check.</p>
                         </div>
                     </div>
+                    
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h4>How far in advance should I book for special events?</h4>
-                            <i class="fas fa-chevron-down"></i>
+                            <h4>What is your cancellation policy?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                         </div>
                         <div class="faq-answer">
-                            <p>For special events like weddings or formal occasions, we recommend booking 2-4 weeks in advance. For wedding parties, please book at least 2-3 months ahead.</p>
+                            <p>We require 24 hours' notice for cancellations. Appointments canceled with less than 24 hours' notice may incur a cancellation fee of 50% of the scheduled service price. No-shows will be charged the full service amount.</p>
                         </div>
                     </div>
+                    
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h4>What payment methods do you accept?</h4>
-                            <i class="fas fa-chevron-down"></i>
+                            <h4>Do you offer consultations before services?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                         </div>
                         <div class="faq-answer">
-                            <p>We accept all major credit cards, debit cards, cash, and mobile payment options like Apple Pay and Google Pay.</p>
+                            <p>Yes, we offer complimentary consultations for most services. For complex color services or significant style changes, we recommend scheduling a consultation appointment before your service appointment.</p>
                         </div>
                     </div>
+                    
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h4>Do you offer gift cards?</h4>
-                            <i class="fas fa-chevron-down"></i>
+                            <h4>What forms of payment do you accept?</h4>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes! Gift cards are available in any denomination and can be purchased in-salon or by phone. They make perfect gifts for any occasion.</p>
+                            <p>We accept cash, all major credit cards, debit cards, and digital payment services like Apple Pay and Google Pay. Gift certificates are also available for purchase and redemption.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Book Your Appointment?</h2>
+                    <p>We can't wait to welcome you to Elegance Salon.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+11234567890" class="btn btn-light">Call Us Now</a>
+                        <a href="#contactForm" class="btn btn-outline-light">Send a Message</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Footer Section -->
+    
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
                         <i class="fas fa-scissors"></i>
                         <span>Elegance</span>
-                    </div>
-                    <p>Where beauty meets expertise. We're dedicated to bringing out your natural beauty and helping you feel your best.</p>
+                    </a>
+                    <p>Providing premium beauty services since 2010. Our mission is to help you look and feel your absolute best.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -246,152 +325,80 @@
                         <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
-
+                
                 <div class="footer-links">
-                    <h4>Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-links">
-                    <h4>Services</h4>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
                     <ul>
                         <li><a href="services.html#haircuts">Haircuts & Styling</a></li>
                         <li><a href="services.html#coloring">Hair Coloring</a></li>
                         <li><a href="services.html#treatments">Hair Treatments</a></li>
                         <li><a href="services.html#makeup">Makeup Services</a></li>
-                        <li><a href="services.html#nail">Nail Services</a></li>
+                        <li><a href="services.html#nails">Nail Care</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="footer-contact">
-                    <h4>Contact</h4>
+                    <h3>Contact Us</h3>
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</span>
+                            <span>123 Beauty St, Suite 100<br>Los Angeles, CA 90001</span>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+11234567890">(123) 456-7890</a>
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+11234567890">(123) 456-7890</a></span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a>
+                            <span><a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a></span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
-                            <div>
-                                <p>Mon-Fri: 9am - 8pm</p>
-                                <p>Sat: 9am - 6pm</p>
-                                <p>Sun: 10am - 4pm</p>
-                            </div>
+                            <span>Mon-Sat: 9am - 7pm<br>Sunday: 10am - 5pm</span>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <div class="copyright">
-                <p>&copy; <span id="currentYear"></span> Elegance Salon. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2023</span> Elegance Salon. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
-
+    
     <!-- Toast Notification -->
     <div class="toast" id="toast">
         <div class="toast-content">
             <i class="fas fa-check-circle"></i>
-            <div class="message">
-                <span class="toast-title" id="toastTitle">Success</span>
-                <span class="toast-message" id="toastMessage">Your message has been sent successfully!</span>
+            <div class="toast-message">
+                <h4 id="toastTitle">Success!</h4>
+                <p id="toastMessage">Your action was completed successfully.</p>
             </div>
         </div>
-        <i class="fas fa-times toast-close" id="toastClose"></i>
-        <div class="progress"></div>
+        <button id="toastClose"><i class="fas fa-times"></i></button>
+        <div class="toast-progress"></div>
     </div>
-
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
     <script src="js/main.js"></script>
-    <script>
-        // Additional JavaScript for FAQ accordion
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                const answer = item.querySelector('.faq-answer');
-                const icon = question.querySelector('i');
-                
-                // Initially hide all answers
-                answer.style.display = 'none';
-                
-                question.addEventListener('click', function() {
-                    // Toggle current item
-                    if (answer.style.display === 'none') {
-                        answer.style.display = 'block';
-                        icon.classList.remove('fa-chevron-down');
-                        icon.classList.add('fa-chevron-up');
-                        item.classList.add('active');
-                    } else {
-                        answer.style.display = 'none';
-                        icon.classList.remove('fa-chevron-up');
-                        icon.classList.add('fa-chevron-down');
-                        item.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
-    <style>
-        /* Additional styles for FAQ */
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .faq-item {
-            margin-bottom: 15px;
-            border: 1px solid var(--border-light);
-            border-radius: var(--radius);
-            overflow: hidden;
-            transition: var(--transition);
-        }
-        
-        .faq-item.active {
-            box-shadow: var(--box-shadow);
-        }
-        
-        .faq-question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            background-color: var(--bg-white);
-            cursor: pointer;
-        }
-        
-        .faq-question h4 {
-            margin: 0;
-            font-size: 1.1rem;
-        }
-        
-        .faq-answer {
-            padding: 0 20px 15px;
-            background-color: var(--bg-white);
-        }
-        
-        .faq-answer p {
-            margin-bottom: 0;
-        }
-        
-        /* Map container styles */
-        .map-container {
-            margin-top: 30px;
-        }
-    </style>
 </body>
 </html>

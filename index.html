@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegance Salon - Premium Beauty Services</title>
+    <title>Elegance Salon - Beauty & Hair Care Services</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -59,294 +59,408 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-overlay"></div>
+        <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2036&q=80');">
             <div class="container">
                 <div class="hero-content">
-                    <div class="hero-text fade-in">
-                        <div class="badge">
-                            <i class="fas fa-scissors"></i>
-                            <p>Premium Salon Experience</p>
-                        </div>
-                        <h1>Reveal Your Natural Beauty with Expert Care</h1>
-                        <p>Experience the finest hair and beauty services tailored to enhance your unique style and personality.</p>
-                        <div class="hero-buttons">
-                            <a href="contact.html" class="btn btn-light">Book Appointment</a>
-                            <a href="services.html" class="btn btn-outline-light">Our Services</a>
+                    <div class="badge">
+                        <i class="fas fa-star"></i>
+                        <p>Premium Beauty Experience</p>
+                    </div>
+                    <h1>Where Beauty Meets Elegance</h1>
+                    <p>Experience the ultimate in hair care and beauty services at our award-winning salon. Book your appointment today.</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-primary">Explore Services</a>
+                        <a href="contact.html" class="btn btn-outline">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="hero-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p>123 Beauty St, Suite 100<br>Los Angeles, CA 90001</p>
                         </div>
                     </div>
-                    <div class="hero-image scale-in">
-                        <img src="https://images.unsplash.com/photo-1595171349553-002c46191c9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="Salon haircut">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Mon-Sat: 9am - 7pm<br>Sunday: 10am - 5pm</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        
         <!-- Services Section -->
-        <section class="services section" id="services">
+        <section class="section" id="services">
             <div class="container">
-                <div class="section-heading">
-                    <h2>Our Services</h2>
-                    <p>We offer a comprehensive range of hair and beauty services to help you look and feel your best.</p>
+                <div class="section-header">
+                    <div class="section-heading">
+                        <div class="badge">
+                            <i class="fas fa-gem"></i>
+                            <p>Our Services</p>
+                        </div>
+                        <h2>Premium Beauty Services</h2>
+                        <p>We offer a wide range of hair, beauty, and wellness services tailored to your needs.</p>
+                    </div>
+                    <a href="services.html" class="btn btn-outline">View All Services</a>
                 </div>
                 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-image">
-                            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3869&q=80" alt="Haircuts & Styling">
+                        <div class="service-icon">
+                            <i class="fas fa-cut"></i>
                         </div>
-                        <div class="service-content">
-                            <div class="service-header">
-                                <h3>Haircuts & Styling</h3>
-                                <span class="price">From $45</span>
-                            </div>
-                            <p>Precision cuts and styling for all hair types by our expert stylists.</p>
-                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
-                        </div>
+                        <h3>Haircuts & Styling</h3>
+                        <p>Precision cuts and styling for all hair types. Our stylists stay updated with the latest trends.</p>
+                        <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-
+                    
                     <div class="service-card">
-                        <div class="service-image">
-                            <img src="https://images.unsplash.com/photo-1595867818082-083862f3d630?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Hair Coloring">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
                         </div>
-                        <div class="service-content">
-                            <div class="service-header">
-                                <h3>Hair Coloring</h3>
-                                <span class="price">From $75</span>
-                            </div>
-                            <p>Vibrant colors, highlights, balayage, and ombre techniques.</p>
-                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
-                        </div>
+                        <h3>Hair Coloring</h3>
+                        <p>From subtle highlights to bold fashion colors, our color specialists create stunning results.</p>
+                        <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-
+                    
                     <div class="service-card">
-                        <div class="service-image">
-                            <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hair Treatments">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
                         </div>
-                        <div class="service-content">
-                            <div class="service-header">
-                                <h3>Hair Treatments</h3>
-                                <span class="price">From $60</span>
-                            </div>
-                            <p>Rejuvenating treatments to repair and nourish your hair.</p>
-                            <a href="contact.html" class="btn btn-outline btn-sm btn-full">Book Now</a>
-                        </div>
+                        <h3>Hair Treatments</h3>
+                        <p>Rejuvenate your hair with our specialized treatments for damage repair and deep conditioning.</p>
+                        <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
-                </div>
-
-                <div class="text-center mt-20">
-                    <a href="services.html" class="btn btn-outline">View All Services</a>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Makeup Services</h3>
+                        <p>Professional makeup for any occasion, from natural everyday looks to glamorous event styles.</p>
+                        <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-sparkles"></i>
+                        </div>
+                        <h3>Nail Care</h3>
+                        <p>Complete nail care including manicures, pedicures, gel nails, and artistic nail designs.</p>
+                        <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Waxing & Skincare</h3>
+                        <p>Full-service waxing and rejuvenating facial treatments for radiant, smooth skin.</p>
+                        <a href="services.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
-
+        
         <!-- About Section -->
-        <section class="about section" id="about">
+        <section class="section bg-light" id="about">
             <div class="container">
                 <div class="about-grid">
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Salon interior">
-                        <div class="about-badge">
-                            <p class="about-badge-title">20+ years</p>
-                            <p class="about-badge-text">Of excellence in beauty</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Elegance Salon Interior">
                     </div>
-                    
                     <div class="about-content">
-                        <h2>About Elegance Salon</h2>
-                        <p class="lead">Founded in 2003, Elegance Salon has been a cornerstone of beauty and wellness in the community for over two decades.</p>
-                        <p>Our philosophy is simple: we believe that everyone deserves to feel beautiful and confident. Our team of skilled professionals is dedicated to providing exceptional service and creating personalized experiences that leave you feeling refreshed and revitalized.</p>
-                        <ul class="feature-list">
-                            <li><span class="check-mark">✓</span>Expert stylists with years of industry experience</li>
-                            <li><span class="check-mark">✓</span>Premium products and latest techniques</li>
-                            <li><span class="check-mark">✓</span>Relaxing, welcoming atmosphere</li>
-                            <li><span class="check-mark">✓</span>Personalized consultations for every client</li>
-                        </ul>
-                        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                        <div class="badge">
+                            <i class="fas fa-heart"></i>
+                            <p>About Us</p>
+                        </div>
+                        <h2>Your Beauty Journey Starts Here</h2>
+                        <p>At Elegance Salon, we believe that everyone deserves to feel beautiful and confident. Our team of experienced professionals is dedicated to providing exceptional service in a relaxing environment.</p>
+                        <p>Founded in 2010, we've built our reputation on quality, creativity, and attention to detail. Our stylists regularly train to stay at the forefront of beauty trends and techniques.</p>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3>10+</h3>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>15k+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>20+</h3>
+                                <p>Expert Stylists</p>
+                            </div>
+                        </div>
+                        
+                        <a href="about.html" class="btn btn-primary">Read Our Story</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Gallery Section -->
-        <section class="gallery section" id="gallery">
+        
+        <!-- Gallery Preview Section -->
+        <section class="section" id="gallery">
             <div class="container">
-                <div class="section-heading">
-                    <h2>Our Gallery</h2>
-                    <p>A showcase of our best work and beautiful transformations.</p>
+                <div class="section-header">
+                    <div class="section-heading">
+                        <div class="badge">
+                            <i class="fas fa-images"></i>
+                            <p>Our Gallery</p>
+                        </div>
+                        <h2>Our Work Showcases</h2>
+                        <p>Browse through some of our best work and successful transformations.</p>
+                    </div>
+                    <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
                 </div>
                 
                 <div class="gallery-grid">
-                    <div class="gallery-item tall">
-                        <img src="https://images.unsplash.com/photo-1634302086887-13b5281d354e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Woman with blond hair">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Hair styling result">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Hair styling session">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Hair coloring result">
                     </div>
                     <div class="gallery-item">
-                        <img src="https://images.unsplash.com/photo-1614159406151-311338fd42f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80" alt="Woman with curly hair">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1970&q=80" alt="Makeup application">
                     </div>
-                    <div class="gallery-item tall">
-                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hair coloring process">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80" alt="Nail art example">
                     </div>
-                </div>
-
-                <div class="text-center mt-20">
-                    <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80" alt="Salon interior">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Hair treatment procedure">
+                    </div>
                 </div>
             </div>
         </section>
-
+        
         <!-- Testimonials Section -->
-        <section class="testimonials section" id="testimonials">
+        <section class="section bg-light" id="testimonials">
             <div class="container">
-                <div class="section-heading">
+                <div class="section-heading text-center">
+                    <div class="badge center">
+                        <i class="fas fa-comment-dots"></i>
+                        <p>Testimonials</p>
+                    </div>
                     <h2>What Our Clients Say</h2>
-                    <p>Hear from our satisfied clients about their experience at Elegance Salon.</p>
+                    <p>Don't just take our word for it. Here's what our clients have to say about their experience with us.</p>
                 </div>
-
-                <div class="testimonials-grid">
+                
+                <div class="testimonials-slider" id="testimonialsSlider">
                     <div class="testimonial-card">
-                        <div class="rating">
+                        <div class="testimonial-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"I've been coming to Elegance for years, and they never disappoint. My stylist always knows exactly what I want and executes it perfectly."</p>
+                        <p class="testimonial-text">"I've been coming to Elegance Salon for over a year now, and I'm always amazed at the results. The stylists are true artists who listen to what I want and make it even better than I imagined."</p>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Sarah Johnson">
-                            <p>Sarah Johnson</p>
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Johnson">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Regular Client</p>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="testimonial-card">
-                        <div class="rating">
+                        <div class="testimonial-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"As someone who's always been nervous about trying new styles, the team at Elegance made me feel comfortable and gave me the best haircut I've ever had."</p>
+                        <p class="testimonial-text">"The attention to detail at Elegance is unmatched. From the moment you walk in, you're treated like royalty. My color treatment was perfect, and my stylist gave me great tips for maintaining it at home."</p>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Michael Chen">
-                            <p>Michael Chen</p>
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Davis">
+                            <div>
+                                <h4>Michael Davis</h4>
+                                <p>First-time Client</p>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="testimonial-card">
-                        <div class="rating">
+                        <div class="testimonial-rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"The atmosphere is so relaxing, and the staff is incredibly professional. My color treatment came out exactly as I wanted. Highly recommend!"</p>
+                        <p class="testimonial-text">"I came in for a complete makeover before my wedding, and the team at Elegance exceeded all my expectations. My hair and makeup were absolute perfection, and they made me feel so comfortable throughout the process."</p>
                         <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1961&q=80" alt="Emily Davis">
-                            <p>Emily Davis</p>
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Richardson">
+                            <div>
+                                <h4>Emily Richardson</h4>
+                                <p>Bridal Client</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button id="prevTestimonial" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="testimonialDots"></div>
+                    <button id="nextTestimonial" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section class="section" id="team">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <div class="badge center">
+                        <i class="fas fa-users"></i>
+                        <p>Our Team</p>
+                    </div>
+                    <h2>Meet Our Experts</h2>
+                    <p>Our talented team of professionals is dedicated to making you look and feel your best.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Jessica Palmer">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h4>Jessica Palmer</h4>
+                        <p>Salon Director & Senior Stylist</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="David Chen">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h4>David Chen</h4>
+                        <p>Color Specialist</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sophia Martinez">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h4>Sophia Martinez</h4>
+                        <p>Makeup Artist</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Olivia Jackson">
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <h4>Olivia Jackson</h4>
+                        <p>Nail Technician</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-50">
+                    <a href="about.html#team" class="btn btn-outline">View All Team Members</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Values Section -->
+        <section class="section bg-light" id="values">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <div class="badge center">
+                        <i class="fas fa-award"></i>
+                        <p>Our Values</p>
+                    </div>
+                    <h2>What Sets Us Apart</h2>
+                    <p>We're committed to excellence in everything we do. Here's what makes us different.</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Quality Products</h3>
+                        <p>We use only premium, salon-quality products that are gentle on your hair and skin.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Expert Stylists</h3>
+                        <p>Our team consists of certified professionals who regularly train in the latest techniques.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3>Customer Focus</h3>
+                        <p>Your satisfaction is our priority. We listen carefully to deliver exactly what you want.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Eco-Friendly</h3>
+                        <p>We're committed to sustainable practices and environmentally friendly products.</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
             <div class="container">
-                <div class="section-heading">
-                    <h2>Get in Touch</h2>
-                    <p>Have questions or ready to book an appointment? Reach out to us.</p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-form">
-                        <h3>Send Us a Message</h3>
-                        <form id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="service">Service Interested In</label>
-                                    <select id="service" name="service">
-                                        <option value="">Select a service</option>
-                                        <option value="haircut">Haircut & Styling</option>
-                                        <option value="coloring">Hair Coloring</option>
-                                        <option value="treatment">Hair Treatment</option>
-                                        <option value="makeup">Makeup Service</option>
-                                        <option value="nails">Nail Service</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                        </form>
-                    </div>
-
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><a href="tel:+11234567890">(123) 456-7890</a></p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a></p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Business Hours</h4>
-                                <p>Mon-Fri: 9am - 8pm<br>Sat: 9am - 6pm<br>Sun: 10am - 4pm</p>
-                            </div>
-                        </div>
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Look?</h2>
+                    <p>Book your appointment today and experience the Elegance difference.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-light">Book Appointment</a>
+                        <a href="tel:+11234567890" class="btn btn-outline-light">Call Us</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Footer Section -->
+    
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
                         <i class="fas fa-scissors"></i>
                         <span>Elegance</span>
-                    </div>
-                    <p>Where beauty meets expertise. We're dedicated to bringing out your natural beauty and helping you feel your best.</p>
+                    </a>
+                    <p>Providing premium beauty services since 2010. Our mission is to help you look and feel your absolute best.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -354,75 +468,80 @@
                         <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
-
+                
                 <div class="footer-links">
-                    <h4>Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-links">
-                    <h4>Services</h4>
+                
+                <div class="footer-services">
+                    <h3>Our Services</h3>
                     <ul>
                         <li><a href="services.html#haircuts">Haircuts & Styling</a></li>
                         <li><a href="services.html#coloring">Hair Coloring</a></li>
                         <li><a href="services.html#treatments">Hair Treatments</a></li>
                         <li><a href="services.html#makeup">Makeup Services</a></li>
-                        <li><a href="services.html#nail">Nail Services</a></li>
+                        <li><a href="services.html#nails">Nail Care</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="footer-contact">
-                    <h4>Contact</h4>
+                    <h3>Contact Us</h3>
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>123 Beauty Street, Suite 100<br>Elegance City, EC 12345</span>
+                            <span>123 Beauty St, Suite 100<br>Los Angeles, CA 90001</span>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+11234567890">(123) 456-7890</a>
+                            <i class="fas fa-phone-alt"></i>
+                            <span><a href="tel:+11234567890">(123) 456-7890</a></span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a>
+                            <span><a href="mailto:info@elegancesalon.com">info@elegancesalon.com</a></span>
                         </li>
                         <li>
                             <i class="fas fa-clock"></i>
-                            <div>
-                                <p>Mon-Fri: 9am - 8pm</p>
-                                <p>Sat: 9am - 6pm</p>
-                                <p>Sun: 10am - 4pm</p>
-                            </div>
+                            <span>Mon-Sat: 9am - 7pm<br>Sunday: 10am - 5pm</span>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <div class="copyright">
-                <p>&copy; <span id="currentYear"></span> Elegance Salon. All rights reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2023</span> Elegance Salon. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
-
+    
     <!-- Toast Notification -->
     <div class="toast" id="toast">
         <div class="toast-content">
             <i class="fas fa-check-circle"></i>
-            <div class="message">
-                <span class="toast-title" id="toastTitle">Success</span>
-                <span class="toast-message" id="toastMessage">Your message has been sent successfully!</span>
+            <div class="toast-message">
+                <h4 id="toastTitle">Success!</h4>
+                <p id="toastMessage">Your action was completed successfully.</p>
             </div>
         </div>
-        <i class="fas fa-times toast-close" id="toastClose"></i>
-        <div class="progress"></div>
+        <button id="toastClose"><i class="fas fa-times"></i></button>
+        <div class="toast-progress"></div>
     </div>
-
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
     <script src="js/main.js"></script>
 </body>
 </html>

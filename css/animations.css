@@ -1,46 +1,12 @@
 
 /* 
 * Elegance Salon Website Animations
-* A beginner-friendly CSS animations file
+* A beginner-friendly animations file for a salon website
 */
 
-/* ========== Basic Animation Classes ========== */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
-}
+/* ========== Keyframes Animations ========== */
 
-.scale-in {
-  opacity: 0;
-  transform: scale(0.9);
-  animation: scaleIn 1s ease forwards 0.3s;
-}
-
-.slide-in-left {
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: slideInLeft 1s ease forwards;
-}
-
-.slide-in-right {
-  opacity: 0;
-  transform: translateX(50px);
-  animation: slideInRight 1s ease forwards;
-}
-
-.slide-in-top {
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: slideInTop 1s ease forwards;
-}
-
-.slide-in-bottom {
-  opacity: 0;
-  transform: translateY(50px);
-  animation: slideInBottom 1s ease forwards;
-}
-
-/* ========== Animation Keyframes ========== */
+/* Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -50,17 +16,19 @@
   }
 }
 
-@keyframes scaleIn {
+/* Slide In From Top */
+@keyframes slideInTop {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
+/* Slide In From Left */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -72,6 +40,7 @@
   }
 }
 
+/* Slide In From Right */
 @keyframes slideInRight {
   from {
     opacity: 0;
@@ -83,66 +52,77 @@
   }
 }
 
-@keyframes slideInTop {
+/* Scale In Animation */
+@keyframes scaleIn {
   from {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: scale(0.9);
   }
   to {
     opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
 
-@keyframes slideInBottom {
+/* Toast Progress Animation */
+@keyframes progress {
   from {
-    opacity: 0;
-    transform: translateY(50px);
+    width: 100%;
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+    width: 0%;
   }
 }
 
-/* ========== Gallery Animation ========== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* ========== Animation Classes ========== */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
 }
 
-.animate-fade-in {
+.slide-in-top {
+  animation: slideInTop 0.8s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Toast Animation */
+.toast-progress {
+  animation: progress 4s linear forwards;
+}
+
+/* For elements that need to be initially hidden */
+.hidden {
   opacity: 0;
-  animation: fadeIn 0.6s ease forwards;
 }
 
-/* ========== Loading Animation ========== */
-.shimmer-loading {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-  background-color: #f0f0f0;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-/* Add animation delays for multiple items */
+/* Animation Delays */
 .delay-100 {
   animation-delay: 0.1s;
 }
@@ -161,4 +141,70 @@
 
 .delay-500 {
   animation-delay: 0.5s;
+}
+
+/* Transition Classes */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(161, 139, 106, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--primary);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Image Hover Effects */
+.hover-scale {
+  overflow: hidden;
+}
+
+.hover-scale img {
+  transition: transform 0.5s ease;
+}
+
+.hover-scale:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Hover Effect */
+.btn-hover-float {
+  transition: transform 0.3s ease;
+}
+
+.btn-hover-float:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Hover Effects */
+.card-hover-raise {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-raise:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
