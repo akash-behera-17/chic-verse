@@ -1,4 +1,3 @@
-
 /* 
 * Elegance Salon Website Styles
 * A beginner-friendly CSS file for a salon website
@@ -6,14 +5,14 @@
 
 /* ========== Base Styles ========== */
 :root {
-  --primary: #db7093;
-  --primary-dark: #c45a7b;
-  --primary-light: #f7cad9;
-  --secondary: #f6f1f4;
+  --primary: #a18b6a;
+  --primary-dark: #8c7559;
+  --primary-light: #d2c5ad;
+  --secondary: #f9f7f4;
   --text-dark: #2c2c2c;
   --text-light: #6c6c6c;
   --text-white: #ffffff;
-  --bg-light: #f9f5f7;
+  --bg-light: #f9f7f4;
   --bg-white: #ffffff;
   --border-light: #e5e5e5;
   --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
@@ -977,7 +976,7 @@ section {
 
 .page-header .badge {
   color: var(--primary);
-  background-color: rgba(219, 112, 147, 0.1);
+  background-color: rgba(161, 139, 106, 0.1);
   margin-bottom: 20px;
 }
 
@@ -1145,7 +1144,7 @@ section {
 }
 
 .cta-section {
-  background-image: linear-gradient(to right, rgba(219, 112, 147, 0.8), rgba(219, 112, 147, 0.9)), url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
+  background-image: linear-gradient(to right, rgba(161, 139, 106, 0.8), rgba(161, 139, 106, 0.9)), url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80');
   background-size: cover;
   background-position: center;
   color: white;
